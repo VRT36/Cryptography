@@ -1,11 +1,11 @@
-def decrypt():
+def encrypt():
     raw = raw_input('enter the text\n')
-    raw = raw.decode('hex')
-    print 'decrypted text==>',raw
-
+    raw = raw.encode('hex')
+    print 'encrypted Hex value==>',raw
+ 
 print('========Hexadecimal========\n\n')
 a = input('MENU\n1)Encrypt text\n2)Decrypt text\nEnter your choice\n')    
-decrypt()
+encrypt()
 
 '''
 Created by: Vasanth R
